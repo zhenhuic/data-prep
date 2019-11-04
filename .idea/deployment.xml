@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="czh@192.168.177.211:22" compareModeInSync="TEXT" showNewOnSourceInSync="false">
+    <serverData>
+      <paths name="czh@10.1.21.161:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/czh/Workspace/data-prep" local="$PROJECT_DIR$" web="http://10.1.21.161" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="czh@192.168.177.211:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/czh/Workspace/data-prep" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
