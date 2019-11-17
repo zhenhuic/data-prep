@@ -76,31 +76,6 @@ def batch_extract(video_dir: str, out_dir: str):
             video_optical_flow(video_path, flow_out_path)
 
 
-def thread_run():
-    th1 = Thread(target=batch_extract, args=['/data/czh/datasets/Robam/compressed_videos/train/grab',
-                                             '/data/czh/datasets/Robam/flow/train/grab'])
-    th2 = Thread(target=batch_extract, args=['/data/czh/datasets/Robam/compressed_videos/train/other',
-                                             '/data/czh/datasets/Robam/flow/train/other'])
-    th3 = Thread(target=batch_extract, args=['/data/czh/datasets/Robam/compressed_videos/val/grab',
-                                             '/data/czh/datasets/Robam/flow/val/grab'])
-    th4 = Thread(target=batch_extract, args=['/data/czh/datasets/Robam/compressed_videos/val/other',
-                                             '/data/czh/datasets/Robam/flow/val/other'])
-
-    th1.start()
-    th2.start()
-    th3.start()
-    th4.start()
-
-    th1.join()
-    print('th1', 'ok')
-    th2.join()
-    print('th2', 'ok')
-    th3.join()
-    print('th3', 'ok')
-    th4.join()
-    print('th4', 'ok')
-
-
 if __name__ == '__main__':
     # batch_extract('E:\\Datasets\\Robam\\compressed_videos\\train\\grab',
     #               'E:\\Datasets\\Robam\\flow\\train\\grab')
